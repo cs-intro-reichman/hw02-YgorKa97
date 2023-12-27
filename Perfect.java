@@ -15,7 +15,7 @@ public class Perfect {
             //check for divisors
             if(num % i == 0){
                 sum += i;
-                // String starts from 1 and for loop ads divisors.
+                // String starts from 1 and for loop add divisors.
                 divisors += " + " + i;
             }
         }
@@ -23,7 +23,7 @@ public class Perfect {
         if (sum == num){
             System.out.println(num + " is a perfect number since " + num + " = " + divisors );
         }else{
-            System.out.println(num + "  is not a perfect number");
+            System.out.println(num + " is not a perfect number");
         }
 	}
 }

@@ -10,7 +10,7 @@ public class Reverse {
             System.out.print(word.charAt(i));
         }
         System.out.println();
-        int middleIndex = word.length() / 2;
+        int middleIndex = (word.length() - 1) / 2;
             System.out.println( "The middle character is " + word.charAt(middleIndex));
     }
 }

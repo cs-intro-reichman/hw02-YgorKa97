@@ -4,7 +4,7 @@
 public class DamkaBoard {
 	public static void main(String[] args) {
 		 int board = Integer.parseInt(args[0]);
-        fint board = Integer.parseInt(args[0]);
+        int board = Integer.parseInt(args[0]);
             for (int i = 0; i < board; i++) {
                 for (int j = (1 - board); j <= board; j++) {
                     boolean isTale = (i + j) % 2 ==0;

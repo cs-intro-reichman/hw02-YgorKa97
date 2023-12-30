@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		int T = Integer.parseInt(args[0]);
+		iint T = Integer.parseInt(args[0]);
         int seeds = Integer.parseInt(args[1]);
         int totalChildren = 0;
         int twoChildren = 0;
@@ -45,6 +45,16 @@ public class OneOfEachStats {
         System.out.println("Number of families with 2 children: " + twoChildren);
         System.out.println("Number of families with 3 children: " + threeChildren);
         System.out.println("Number of families with 4 children or more: " + fourOrMore);
+
+        // most common number of children
+        int max = Math.max(Math.max(twoChildren ,threeChildren),fourOrMore);
+        if (max == twoChildren){
+            System.out.println("The most common number of children is 2.");
+        }else if(max == threeChildren){
+            System.out.println("The most common number of children is 3.");
+        }else if(max == fourOrMore){
+            System.out.println("The most common number of children is 4 or more.");
+        }
 		// Gets the two command-line arguments
 		//int T = Integer.parseInt(args[0]);
 		//int seed = Integer.parseInt(args[1]);

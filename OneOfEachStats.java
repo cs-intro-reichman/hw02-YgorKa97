@@ -16,7 +16,7 @@ public class OneOfEachStats {
         int threeChildren = 0;
         int fourOrMore = 0;
         Random generator = new Random(seeds);
-        for(int i = 0; i<=T; i++){
+        for(int i = 0; i < T; i++){
             boolean isBoy = false;
             boolean isGirl = false;
             int childCount = 0;

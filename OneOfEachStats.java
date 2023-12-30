@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		iint T = Integer.parseInt(args[0]);
+		int T = Integer.parseInt(args[0]);
         int seeds = Integer.parseInt(args[1]);
         int totalChildren = 0;
         int twoChildren = 0;
